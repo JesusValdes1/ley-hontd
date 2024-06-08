@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <title>Ley d'Hondt</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <main>
+            <header>
+                <h1>Ley d'Hontd</h1>
+            </header>
+
+            <form>
+                <div>
+                    <span>Se ha elegir <input type="number" name="seats" id="seats" value="0" class="small"> representantes</span>
+                </div>
+                
+                <fieldset>
+                    <legend>Campos opcionales</legend>
+
+                    <div>
+                        <span>Minimo de votos: <input type="number" name="thresold" id="thresold" value="3" class="small"> %</span>
+                    </div>
+                    <div>
+                        <span>En blanco: <input type="number" name="votesBlank" id="votesBlank" value="0" class="small"> %</span>
+                    </div>
+                </fieldset>
+                
+                <fieldset>
+                    <legend>Candidaturas</legend>
+
+                    <div class="political-party">
+                        <label for="p1">Partido A</label>
+                        <input type="number" name="p1" id="p1" value="0">
+                    </div>
+                    
+                    <div class="political-party">
+                        <label for="p2">Partido B</label>
+                        <input type="number" name="p2" id="p2" value="0">
+                    </div>
+
+                    <div class="political-party">
+                        <label for="p3">Partido C</label>
+                        <input type="number" name="p3" id="p3" value="0">
+                    </div>
+
+                    <div class="political-party">
+                        <label for="p4">Partido D</label>
+                        <input type="number" name="p4" id="p4" value="0">
+                    </div>
+                </fieldset>
+                
+                <div class="wrapper-button">
+                    <button id="calculate">Calcular</button>
+                </div>
+            </form>
+        </main>
+    </body>
+</html>
